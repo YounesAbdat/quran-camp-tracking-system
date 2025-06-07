@@ -1,13 +1,19 @@
 {
   "name": "quran-camp-tracking-system",
   "version": "1.0.0",
+  "description": "Quran Memorization Camp Tracking System for Al-Nahda Institution",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm run dev",
     "client": "cd client && npm start",
-    "install-deps": "cd server && npm install && cd ../client && npm install"
+    "install-deps": "cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build",
+    "seed": "cd server && npm run seed"
   },
   "devDependencies": {
     "concurrently": "^7.6.0"
-  }
+  },
+  "keywords": ["quran", "memorization", "camp", "tracking", "education"],
+  "author": "Al-Nahda Quran Institution",
+  "license": "MIT"
 }
